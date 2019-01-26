@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+'.forEach' does not have a return value. It only calls a function on the elements, whereas '.map' returns an array of the same size.
+
 2. What is the difference between a function and a method?
+A method is a function that is unique to specific object(s) or class(es). Only the object(s) or class(es) that have a method built into them can acess the method whereas functions are typically on the global scope or simply anonymous functions.
 
 3. What is closure?
+Closure gives access to the outer function's scope. It is a key part of classes because each child class is able to inherit the properties and methods of the parent class above it and any props/methods that parent class may have inhertied from a class above it.
 
 4. Describe the four rules of the 'this' keyword.
+1.)Window Binding- Any function on the global scope's value of "this" will be the window/console Object. For example on codepen when we call "this.name" it returns "Codepen".
+
+2.)Implicit binding- When we call "this" inside of a function, the object before the 'dot' is the value for "this".
+
+3.)New Binding- Used when a constructor function is involved. "this"'s value is the instance of the object created and returned by the function.
+
+4.)Explicit Binding- used for when the call or apply methods are used. The value of "this" is explicitly defined.
+
 
 5. Why do we need super() in an extended class?
+'super()' must be use in a child Object's constructor function in order to access and call functions on an object's parent. It replaces our use of .call or .apply in the protoype method, when we use the class method to built class families.
 
 ## Project Set up
 
